@@ -13,24 +13,20 @@
             padding: 0;
             background-color: #fff; /* white background */
             color: #333; /* dark text color */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
         }
 
         .container {
-            display: flex;
             width: 80%;
             max-width: 1200px;
             margin: auto;
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
         }
 
         .left-half {
-            flex: 1;
+            width: 50%;
             background-color: #00b3b3; /* teal background */
             display: flex;
             justify-content: center;
@@ -38,15 +34,10 @@
         }
 
         .right-half {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .right-half img {
-            max-width: 100%;
-            height: auto;
+            width: 50%;
+            background-image: url('https://files.oaiusercontent.com/file-nMWdCBDtfasWQ6F2saJQ9LKA?se=2024-03-03T07%3A16%3A57Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3Df36b8ec2-e72d-4373-b1fd-e6d465ef5244.webp&sig=NKQsT40hjESk0yW7gap9KWv%2BYtrm%2B187V%2B7QfcBYn5E%3D'); /* replace with your image URL */
+            background-size: cover;
+            background-position: center;
         }
 
         .content {
@@ -101,9 +92,7 @@
                 <a href="#" class="cta-btn">Learn More</a>
             </div>
         </div>
-        <div class="right-half">
-            <img src="https://files.oaiusercontent.com/file-nMWdCBDtfasWQ6F2saJQ9LKA?se=2024-03-03T07%3A16%3A57Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3Df36b8ec2-e72d-4373-b1fd-e6d465ef5244.webp&sig=NKQsT40hjESk0yW7gap9KWv%2BYtrm%2B187V%2B7QfcBYn5E%3D" alt="Your Image">
-        </div>
+        <div class="right-half"></div>
     </div>
     <footer>
         <p>&copy; 2024 Your Company Name</p>
