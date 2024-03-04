@@ -18,35 +18,35 @@
         .container {
             width: 100%;
             display: flex;
-            flex-wrap: wrap; /* Allow items to wrap to the next line */
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             height: 100vh; /* 100% of the viewport height */
         }
 
-        .half {
+        .right-half {
             width: 50%;
-            height: 50vh; /* 50% of the viewport height */
+            background-color: #ff8c1a; /* orange background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Added to align content vertically */
+            padding: 20px;
+        }
+
+        .left-half {
+            width: 50%;
+            background-image: url('food collage .jpg'); /* replace with your image URL */
             background-size: cover;
             background-position: center;
         }
 
-        .left-half.teal {
-            background-color: #007c8a; /* teal background */
-        }
-
-        .right-half.image {
-            background-image: url('backgroundpicforfood.jpg'); /* replace with your image URL */
-        }
-
         .content {
-            padding: 20px;
             text-align: center; /* Center the text */
-            color: #fff; /* white text color */
         }
 
         h1 {
+            color: #ffff00; /* yellow heading color */
             margin-bottom: 30px;
             font-family: 'Lucida Console', Monaco, monospace; /* Use Lucida Console font */
             font-size: 60px; /* Set the font size to 36 pixels */
@@ -60,6 +60,22 @@
             font-size: 25px;
         }
 
+        .cta-btn {
+            display: inline-block;
+            background-color: #ff8c1a; /* orange button background */
+            color: #fff; /* white text color */
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-top: 20px; /* Add margin to separate from the video */
+            font-family: 'Lucida Console', Monaco, monospace; /* Use Lucida Console font */
+        }
+        
+        .cta-btn:hover {
+            background-color: #ffbf00; /* yellow button background on hover */
+        }
+
         footer {
             background-color: #333; /* dark footer background */
             color: #fff; /* white text color */
@@ -67,25 +83,56 @@
             padding: 20px 0;
             width: 100%;
         }
+
+        /* New container styles */
+        .container-2 {
+            width: 100%;
+            display: flex;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px; /* Add margin to separate from the first container */
+        }
+
+        .left-half.teal {
+            width: 50%;
+            background-color: #007c8a; /* teal background */
+        }
+
+        .right-half.image-2 {
+            width: 50%;
+            background-image: url('your-image-url.jpg'); /* replace with your image URL */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .content-2 {
+            text-align: center; /* Center the text */
+            color: #fff; /* white text color */
+            padding: 20px;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="half left-half teal">
+        <div class="left-half"></div>
+        <div class="right-half">
             <div class="content">
-                <h1>Teal Left Half</h1>
-                <p>This is the teal left half.</p>
+                <h1> What Is munchies? </h1>
+                <p> munchies is an innovative AI-powered tool designed to enhance your culinary journey. With the ability to identify and explore your palate, 
+                munchies empowers you to effortlessly discover diverse cuisines and recipes, enabling you to elevate your cooking skills and savor the flavors of the world.</p>
             </div>
         </div>
-        <div class="half right-half image"></div>
-        <div class="half right-half orange">
-            <div class="content">
-                <h1>Orange Right Half</h1>
-                <p>This is the orange right half.</p>
+    </div>
+    <div class="container-2">
+        <div class="left-half teal">
+            <div class="content-2">
+                <h1> Teal Left Half </h1>
+                <p> This is the teal left half. </p>
             </div>
         </div>
-        <div class="half left-half image"></div>
+        <div class="right-half image-2"></div>
     </div>
     <footer>
         <p>&copy; 2024 munchies.io </p>
