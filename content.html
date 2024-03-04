@@ -11,7 +11,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fff; /* white background */
+            background-color: beige; /* beige background */
             color: #333; /* dark text color */
         }
 
@@ -47,7 +47,7 @@
 
         h1 {
             color: #ffff00; /* yellow heading color */
-            margin-bottom: 0; /* Remove margin-bottom */
+            margin-bottom: 30px;
             font-family: 'Lucida Console', Monaco, monospace; /* Use Lucida Console font */
             font-size: 60px; /* Set the font size to 36 pixels */
             font-weight: bold; /* Set the font weight to bold */
@@ -84,36 +84,10 @@
             width: 100%;
         }
 
-        /* New container styles */
-        .container-2 {
-            width: 100%;
-            display: flex;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            height: 100vh; /* 100% of the viewport height */
-        }
-
-        .left-half.teal {
-            width: 50%;
-            background-color: #007c8a; /* teal background */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column; /* Added to align content vertically */
-            padding: 20px;
-        }
-
-        .right-half.image-2 {
-            width: 50%;
-            background-image: url('your-image-url.jpg'); /* replace with your image URL */
-            background-size: cover;
-            background-position: center;
-        }
-
-        .content-2 {
-            text-align: center; /* Center the text */
-            color: #fff; /* white text color */
+        /* New yellow section styles */
+        .yellow-section {
+            background-color: #ffff00; /* yellow background */
+            text-align: center;
             padding: 20px;
         }
     </style>
@@ -130,14 +104,13 @@
             </div>
         </div>
     </div>
-    <div class="container-2">
-        <div class="left-half teal">
-            <div class="content-2">
-                <h1> Teal Left Half </h1>
-                <p> This is the teal left half. </p>
-            </div>
-        </div>
-        <div class="right-half image-2"></div>
+    <div class="yellow-section">
+        <h2>Yellow Section</h2>
+        <p>This is the yellow section below the container.</p>
     </div>
     <footer>
-        <p>&copy; 2024 munchies.io </p
+        <p>&copy; 2024 munchies.io </p>
+    </footer>
+</body>
+
+</html>
