@@ -1,1 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>munchies.io | Explore Your Palettee</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* white background */
+            color: #333; /* dark text color */
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            height: 100vh; /* 100% of the viewport height */
+        }
+
+        .right-half {
+            width: 50%;
+            background-color: #ff8c1a; /* teal background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Added to align content vertically */
+        }
+
+        .left-half {
+            width: 50%;
+            background-image: url('backgroundpicforfood.jpg'); /* replace with your image URL */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center; /* Center the text */
+        }
+
+        h1 {
+            color: #ffff00; /* yellow heading color */
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: 'Lucida Console', Monaco, monospace; /* Use Lucida Console font */
+            font-size: 60px; /* Set the font size to 36 pixels */
+            font-weight: bold; /* Set the font weight to bold */
+            white-space: nowrap;
+            overflow: hidden;
+            width: 30em;
+            animation: type 4s steps(60, end);  
+            }
+            
+            @keyframes type{ 
+              from { width: 0; } 
+            }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+            font-family: 'Lucida Console', Monaco, monospace; /* Use Lucida Console font */
+            font-size: 25px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background-color: #ff8c1a; /* orange button background */
+            color: #fff; /* white text color */
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-top: 20px; /* Add margin to separate from the video */
+            font-family: 'Lucida Console', Monaco, monospace; /* Use Lucida Console font */
+        }
+        
+        .cta-btn:hover {
+            background-color: #ffbf00; /* yellow button background on hover */
+        }
+
+        footer {
+            background-color: #333; /* dark footer background */
+            color: #fff; /* white text color */
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+        }
+
+        video {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-half">
+            <div class="content">
+                <h1> munchies. </h1>
+                <p> from picture to plate ~ your culinary journey awaits! </p>
+                <div>
+                    <video width="500" height="500" controls autoplay>
+                        <source src="https://cdn.pika.art/v1/4c839e2b-7f33-4631-86f2-8a02261896f9/make_this_into_a_video_seed225618495135776.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <a href="content.html" class="cta-btn">ready to munch?</a>
+            </div>
+        </div>
+        <div class="right-half"></div>
+    </div>
+    <footer>
+        <p>&copy; 2024 munchies.io </p>
+    </footer>
+</body>
+
+</html>
