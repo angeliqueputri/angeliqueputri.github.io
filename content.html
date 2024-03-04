@@ -91,12 +91,17 @@
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 20px; /* Add margin to separate from the first container */
+            height: 100vh; /* 100% of the viewport height */
         }
 
         .left-half.teal {
             width: 50%;
-            background-color: #007c8a; /* teal background */
+            background-color: #007c8a; /* orange background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Added to align content vertically */
+            padding: 20px;
         }
 
         .right-half.image-2 {
