@@ -120,6 +120,25 @@
         .teal-content img {
             margin-right: 20px; /* Space between image and paragraph */
         }
+        .teal-box-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px; /* Space between each image and paragraph */
+        }
+        
+        .teal-text {
+            flex: 1; /* Take up remaining space */
+        }
+        
+        .teal-paragraph {
+            background-color: #00b3b3; /* teal background */
+            color: #fff; /* white text color */
+            padding: 20px;
+            border-radius: 10px;
+            margin-left: 20px; /* Space between image and text box */
+            margin-bottom: 20px; /* Space between each paragraph */
+        }
+
         
     </style>
 </head>
@@ -149,8 +168,14 @@
                 <p>1. Capture the Culinary Moment: Spot a dish that intrigues you? Simply take a photo using Munchies. Our AI technology is designed to recognize food from various angles and lighting conditions, ensuring accurate identification.</p>
             </div>
             <div class="teal-content">
-                <img src="nasi goreng.png" width="320" height="320">
-                <p>2. Discover the Dish's Story: Within seconds, Munchies provides you with the name of the dish, along with its cultural or regional background. Learn about the history and tradition behind what</p>
+                <div class="teal-box-item">
+                    <img src="nasi goreng.png" width="320" height="320">
+                    <div class="teal-text">
+                        <div class="teal-paragraph">
+                            <p>2. Discover the Dish's Story: Within seconds, Munchies provides you with the name of the dish, along with its cultural or regional background. Learn about the history and tradition behind what</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="teal-content">
                 <img src="ingredients.png" width="320" height="320">
